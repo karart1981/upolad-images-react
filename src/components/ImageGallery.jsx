@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const ACCESS_KEY = "zoprzTkkhbABkMr6MmPcdHxE3fnR89jEXq2CEOO7UCE"; // Պարտադիր փոխեք ձերով
+const ACCESS_KEY = "zoprzTkkhbABkMr6MmPcdHxE3fnR89jEXq2CEOO7UCE"; 
 
 const ImageGallery = ({ query }) => {
   const [images, setImages] = useState([]);
@@ -51,12 +51,12 @@ const ImageGallery = ({ query }) => {
             key={img.id}
             src={img.urls.small}
             alt={img.alt_description}
-            className="rounded shadow"
+            className="rounded shadow w-[400px] h-[200px] object-cover"
           />
         ))}
       </div>
       {images.length > 0 && (
-        <button onClick={loadMore} className="mt-6 px-4 py-2 bg-green-600 text-white rounded">
+        <button onClick={loadMore} className="mt-6 px-4 py-2 bg-[#d201c7] text-white rounded cursor-pointer">
           Load More
         </button>
       )}
