@@ -15,9 +15,9 @@ const SearchBar = ({ setQuery }) => {
         placeholder="Search images..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        className="border px-4 py-2 rounded-l-md w-64 border-white outline-none text-white capitalize"
+        className="border px-4 py-2 rounded-l-md w-64 border-white outline-none text-white capitalize select-none"
       />
-      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded-r-md cursor-pointer">
+      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded-r-md cursor-pointer select-none">
         Search
       </button>
     </form>
